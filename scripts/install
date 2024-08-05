@@ -69,7 +69,7 @@ ynh_script_progression --message="Adding $app's configuration files..." --weight
 ###
 ### Check the documentation of `ynh_add_config` for more info.
 
-ynh_add_config --template="../conf/user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
+ynh_add_config --template="user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
 
 # FIXME: this should be handled by the core in the future
 ### You may need to use chmod 600 instead of 400,
