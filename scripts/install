@@ -69,7 +69,7 @@ ynh_script_progression --message="Adding $app's configuration files..." --weight
 ###
 ### Check the documentation of `ynh_add_config` for more info.
 
-ynh_add_config --template="some_config_file" --destination="$install_dir/some_config_file"
+ynh_add_config --template="user-config.inc.php-dist" --destination="$install_dir/conf/user-config.inc.php"
 
 # FIXME: this should be handled by the core in the future
 ### You may need to use chmod 600 instead of 400,
@@ -170,8 +170,8 @@ ynh_add_fail2ban_config --logpath="/var/log/nginx/${domain}-error.log" --failreg
 ### forms.
 
 # Installation with curl
-ynh_script_progression --message="Finalizing installation..." --weight=1
-ynh_local_curl "/INSTALL_PATH" "key1=value1" "key2=value2" "key3=value3"
+#ynh_script_progression --message="Finalizing installation..." --weight=1
+#ynh_local_curl "/INSTALL_PATH" "key1=value1" "key2=value2" "key3=value3"
 
 #=================================================
 # START SYSTEMD SERVICE
