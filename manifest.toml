@@ -15,7 +15,7 @@ maintainers = ["johndoe"]
 # NB: Only the "license" key is mandatory. Remove entries for which there's no relevant data
 license = "GNU GENERAL PUBLIC LICENSE" # you can see the available licenses identifiers list here: https://spdx.org/licenses/
 website = "https://hotglue.me"
-demo = "https://demo.hotglue.me/"
+demo = "https://hotglue.me/demo/"
 admindoc = "https://yunohost.org/packaging_apps"
 userdoc = "https://yunohost.org/apps"
 code = "https://github.com/k0a1a/hotglue2"
