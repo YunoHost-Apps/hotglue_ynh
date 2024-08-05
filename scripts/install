@@ -32,8 +32,8 @@ source /usr/share/yunohost/helpers
 
 # If you need to, you can define custom settings
 # (or remove this section entirely if not relevant for you)
-foo="bar"
-ynh_app_setting_set --app=$app --key=foo --value=$foo
+#foo="bar"
+#ynh_app_setting_set --app=$app --key=foo --value=$foo
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -74,8 +74,8 @@ ynh_add_config --template="some_config_file" --destination="$install_dir/some_co
 # FIXME: this should be handled by the core in the future
 ### You may need to use chmod 600 instead of 400,
 ### for example if the app is expected to be able to modify its own config
-chmod 400 "$install_dir/some_config_file"
-chown "$app:$app" "$install_dir/some_config_file"
+chmod -R 755 "$install_dir/content"
+chown -R "$app:$app" "$install_dir/content"
 
 ### For more complex cases where you want to replace stuff using regexes,
 ### you shoud rely on ynh_replace_string (which is basically a wrapper for sed)
