@@ -15,8 +15,9 @@
 $user = [
  'PROJECT' => 'Hotglue',
  'USER' => 'admin',
- 'PASSWORD' => 'changeme'
-]
-?>
+ 'PASSWORD' => 'changeme',
+];
+
+
 
 

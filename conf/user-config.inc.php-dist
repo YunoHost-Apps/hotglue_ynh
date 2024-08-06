@@ -12,6 +12,8 @@
  *
  */
 
+@include('user.inc.php');
+
 @define('AUTH_USER', 'admin');
 @define('AUTH_PASSWORD', 'changeme');
 @define('AUTH_METHOD', 'digest');
