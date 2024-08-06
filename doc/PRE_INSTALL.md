@@ -1,1 +1,1 @@
-This is a dummy disclaimer to display prior to the install
+Hotglue is a flat-file based system thus it does not require a database.
