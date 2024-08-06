@@ -26,6 +26,44 @@ install_dir=$(ynh_app_setting_get --app="$app" --key=install_dir)
 # SPECIFIC GETTERS FOR TOML SHORT KEY
 #=================================================
 
+set__password() {
+    if [ "$password" == "" ]
+    then
+        ynh_app_setting_set --app=$app --key=password --value="$password"
+    fi
+}
+
+set__username() {
+    if [ "$username" == "" ]
+    then
+        ynh_app_setting_set --app=$app --key=username --value="$username"
+    fi
+}
+
+ynh_app_config_validate() {
+    _ynh_app_config_validate
+
+    if [ "$password" == "" ]
+    then
+        ynh_die --message="You need to set a password"
+    fi
+
+    if [ "$username" == "" ]
+    then
+        ynh_die --message="You need to set a username"
+    fi
+}
+
+ynh_app_config_apply() {
+    _ynh_app_config_apply
+
+    if [ ! "$password" == ""  ] && [ ! "$username" == "" ]
+    then
+      sed -i "s/\('AUTH_USER', '\).*\('\)/\1$username\2/g" "$install_dir/user-config.inc.php" &&
+      sed -i "s/\('AUTH_PASSWORD', '\).*\('\)/\1$password\2/g" "$install_dir/user-config.inc.php"
+    fi
+}
+
 get__amount() {
     # Here we can imagine to have an API call to stripe to know the amount of donation during a month
     local amount=200

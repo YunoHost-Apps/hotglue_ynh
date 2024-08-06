@@ -1,5 +1,26 @@
 #:schema https://github.com/YunoHost/apps/raw/master/schemas/config_panel.v1.schema.json
 
+
+version = "1.0"
+
+[main]
+name = "Hotglue configuration"
+
+    [main.hotglue]
+    name = "Editing access"
+        [main.hotglue.username]
+        ask = "Set username"
+        type = "string"
+        optional = true
+        help = "If a password already exists, leave blank and it will not be replaced."
+
+        [main.hotglue.password]
+        ask = "Set a password for the SSH and SFTP access"
+        type = "password"
+        optional = true
+        visible = "username"
+        help = "If a password already exists, leave blank and it will not be replaced."
+
 ## Config panel are available from webadmin > Apps > YOUR_APP > Config Panel Button
 ## Those panels let user configure some params on their apps using a friendly interface,
 ## and remove the need to manually edit files from the command line.
@@ -22,7 +43,7 @@
 ## | ------ | ---    | ------------------------------------------------------- |
 ## | 0.1    | 3.x    | 0.1 config script not compatible with YNH >= 4.3        |
 ## | 1.0    | 4.3.x  | The new config panel system with 'bind' property        |
-version = "1.0"
+# version = "1.0"
 
 ## (optional) i18n property let you internationalize questions, however this feature 
 ## is only available in core configuration panel (like yunohost domain config).
@@ -39,16 +60,16 @@ version = "1.0"
 ## Keep in mind this ID will be used in CLI to refer to your question, so choose
 ## something short and meaningfull.
 ## In the webadmin, each panel corresponds to a distinct tab / form
-[main]
+# [main]
 
 ## Define the label for your panel
 ## Internationalization works similarly to the 'description' and 'ask' questions in the manifest
-name.en = "Main configuration"
-name.fr = "Configuration principale"
+# name.en = "Main configuration"
+# name.fr = "Configuration principale"
 
 ## (optional) If you need to trigger a service reload-or-restart after the user
 ## change a question in this panel, you can add your service in the list.
-services = ["__APP__"]
+# services = ["__APP__"]
 # or services = ["nginx", "__APP__"] to also reload-or-restart nginx
 
 ## (optional) This help properties is a short help displayed on the same line
@@ -72,11 +93,11 @@ services = ["__APP__"]
     ## We use the context of pepettes_ynh as an example,
     ## which is a simple donation form app written in python,
     ## and for which the admin will want to edit the configuration
-    [main.customization]
+    # [main.customization]
 
     ## (optional) Defining a proper title for sections is not mandatory
     ## and depends on the exact rendering you're aiming for the CLI / webadmin
-    name = ""
+    # name = ""
 
     ## (optional) This help properties is a short help displayed on the same line
     ## than the section title, meant to provide additional details
@@ -90,7 +111,7 @@ services = ["__APP__"]
     
     ## (optional) By default all questions are optionals, but you can specify a
     ## default behaviour for question in the section
-    optional = false
+    # optional = false
         
     ## (optional) It's also possible with the 'visible' property to only
     ## display the section depending on the user's answers to previous questions.
@@ -100,7 +121,7 @@ services = ["__APP__"]
     ##
     ## Also, keep in mind that this feature only works in the webadmin and not in CLI
     ## (therefore a user could be prompted in CLI for a question that may not be relevant)
-    visible = true
+    # visible = true
 
         ########################################################################
         #### ABOUT QUESTIONS
@@ -119,14 +140,14 @@ services = ["__APP__"]
         ## extend availables questions types list.
         ## See: TODO DOC LINK
         
-        [main.customization.project_name]
+        # [main.customization.project_name]
         
         ## (required) The ask property is equivalent to the ask property in 
         ## the manifest. However, in config panels, questions are displayed on the
         ## left side and therefore have less space to be rendered. Therefore, 
         ## it is better to use a short question, and use the "help" property to
         ## provide additional details if necessary.
-        ask.en = "Hotglue settings"
+        # ask.en = "Hotglue settings"
 
         ## (required) The type property indicates how the question should be 
         ## displayed, validated and managed. Some types have specific properties.
@@ -135,8 +156,8 @@ services = ["__APP__"]
         ## email, url, date, time, color, select, domain, user, tags, file.
         ##
         ## For a complete list with specific properties, see: TODO DOC LINK
-        type = "string"
-        bind = "PROJECT:__INSTALL_DIR__/user.inc.php"
+        # type = "string"
+        # bind = "PROJECT:__INSTALL_DIR__/user.inc.php"
         
         ########################################################################
         #### ABOUT THE BIND PROPERTY
@@ -181,15 +202,15 @@ services = ["__APP__"]
         #bind = "name:/var/www/__APP__/settings.py"
         
 
-        [main.customization.username]
-        ask.en = "Username"
-        type = "string"
-        bind = "USER:__INSTALL_DIR__/user.inc.php"
+        # [main.customization.username]
+        # ask.en = "Username"
+        # type = "string"
+        # bind = "USER:__INSTALL_DIR__/user.inc.php"
 
-        [main.customization.password]
-        ask.en = "Password"
-        type = "password"
-        bind = "PASSWORD:__INSTALL_DIR__/user.inc.php"
+        # [main.customization.password]
+        # ask.en = "Password"
+        # type = "password"
+        # bind = "PASSWORD:__INSTALL_DIR__/user.inc.php"
         
 
         ## ---------------------------------------------------------------------
