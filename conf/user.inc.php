@@ -12,10 +12,11 @@
  *
  */
 
-$PROJECT = 'Hotglue';
-$USER = 'admin';
-$PASSWORD = 'changeme';
-
+$user = [
+ 'PROJECT' => 'Hotglue',
+ 'USER' => 'admin',
+ 'PASSWORD' => 'changeme'
+]
 ?>
 
 
