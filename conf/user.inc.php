@@ -13,8 +13,8 @@
  */
 
 $project_name = 'Hotglue';
-$AUTH_USER = 'admin';
-$AUTH_PASSWORD = 'changeme';
+$USER = 'admin';
+$PASSWORD = 'changeme';
 
 ?>
 

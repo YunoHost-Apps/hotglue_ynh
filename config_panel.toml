@@ -181,12 +181,12 @@ services = ["__APP__"]
         #bind = "name:/var/www/__APP__/settings.py"
         
 
-        [main.customization.AUTH_USER]
+        [main.customization.USER]
         ask.en = "Username"
         type = "string"
         bind = ":__INSTALL_DIR__/user.inc.php"
 
-        [main.customization.AUTH_PASSWORD]
+        [main.customization.PASSWORD]
         ask.en = "Password"
         type = "password"
         bind = ":__INSTALL_DIR__/user.inc.php"
