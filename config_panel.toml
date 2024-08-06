@@ -137,14 +137,6 @@ services = ["__APP__"]
         ## For a complete list with specific properties, see: TODO DOC LINK
         type = "string"
         
-        [main.customization.AUTH_USER]
-        ask.en = "Username"
-        type = "string"
-
-        #[main.customization.AUTH_PASSWORD]
-        #ask.en = "Password"
-        #type = "string"
-        
         ########################################################################
         #### ABOUT THE BIND PROPERTY
         ########################################################################
@@ -186,7 +178,16 @@ services = ["__APP__"]
         ## In that case, the key name can be specified before the column ':'
         
         #bind = "name:/var/www/__APP__/settings.py"
-        bind = "name:/var/www/__APP__/user-config.inc.php"
+        bind = ":/var/www/__APP__/user-config.inc.php"
+
+        [main.customization.AUTH_USER]
+        ask.en = "Username"
+        type = "string"
+
+        [main.customization.AUTH_PASSWORD]
+        ask.en = "Password"
+        type = "password"
+        
 
         ## ---------------------------------------------------------------------
         ## IMPORTANT: other 'bind' mode exists:
