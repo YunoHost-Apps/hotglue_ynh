@@ -15,4 +15,6 @@
 $AUTH_USER = 'admin';
 $AUTH_PASSWORD = 'changeme';
 
+?>
+
 

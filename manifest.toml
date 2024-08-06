@@ -40,7 +40,7 @@ multi_instance = true
 # FIXME: replace with true, false, or "not_relevant".
 # Not to confuse with the "sso" key: the "ldap" key corresponds to wether or not a user *can* login on the app using
 # its YunoHost credentials.
-ldap = "?"
+ldap = "true"
 
 # FIXME: replace with true, false, or "not_relevant".
 # Not to confuse with the "ldap" key: the "sso" key corresponds to wether or not a user is *automatically logged-in*

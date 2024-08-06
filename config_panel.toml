@@ -119,14 +119,14 @@ services = ["__APP__"]
         ## extend availables questions types list.
         ## See: TODO DOC LINK
         
-        #[main.customization.project_name]
+        [main.customization.project_name]
         
         ## (required) The ask property is equivalent to the ask property in 
         ## the manifest. However, in config panels, questions are displayed on the
         ## left side and therefore have less space to be rendered. Therefore, 
         ## it is better to use a short question, and use the "help" property to
         ## provide additional details if necessary.
-        #ask.en = "Hotglue settings"
+        ask.en = "Hotglue settings"
 
         ## (required) The type property indicates how the question should be 
         ## displayed, validated and managed. Some types have specific properties.
@@ -135,7 +135,7 @@ services = ["__APP__"]
         ## email, url, date, time, color, select, domain, user, tags, file.
         ##
         ## For a complete list with specific properties, see: TODO DOC LINK
-        #type = "string"
+        type = "string"
         
         ########################################################################
         #### ABOUT THE BIND PROPERTY
