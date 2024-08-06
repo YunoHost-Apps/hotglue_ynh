@@ -12,7 +12,7 @@
  *
  */
 
-$project_name = 'Hotglue';
+$PROJECT = 'Hotglue';
 $USER = 'admin';
 $PASSWORD = 'changeme';
 
