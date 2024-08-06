@@ -26,8 +26,6 @@ source /usr/share/yunohost/helpers
 ### $app is the app id (i.e. 'example' for first install,
 ### or 'example__2', '__3', ... for multi-instance installs)
 
-project_name = $app
-
 #=================================================
 # INITIALIZE AND STORE SETTINGS
 #=================================================
@@ -36,6 +34,7 @@ project_name = $app
 # (or remove this section entirely if not relevant for you)
 #foo="bar"
 #ynh_app_setting_set --app=$app --key=foo --value=$foo
+ynh_app_setting_set --app=$app --key=project_name --value=$app
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
