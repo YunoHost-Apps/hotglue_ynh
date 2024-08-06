@@ -3,4 +3,3 @@ In order to start editing you need to add '/edit' to the end of the URL, eg http
 
 Checkout other Hotglue sites: https://hotglue.me/latest
 
-Default editor's credentials: *admin/changeme*
