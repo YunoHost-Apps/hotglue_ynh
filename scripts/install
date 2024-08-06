@@ -34,9 +34,7 @@ source /usr/share/yunohost/helpers
 # (or remove this section entirely if not relevant for you)
 #foo="bar"
 #ynh_app_setting_set --app=$app --key=foo --value=$foo
-#username="admin"
-#password="changeme"
-#project="Hotglue!"
+
 ynh_app_setting_set --app=$app --key=username --value="admin"
 ynh_app_setting_set --app=$app --key=password --value=$(ynh_string_random)
 #ynh_app_setting_set --app=$app --key=AUTH_PASSWORD --value=$password
@@ -151,7 +149,7 @@ ynh_add_systemd_config
 ### to proceed if you later realize that you need to enable some flags that
 ### weren't enabled on old installs (be careful it'll override the existing
 ### service though so you should re-provide all relevant flags when doing so)
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Hotglue is a visual web editor" --log="/var/log/$app/$app.log"
 
 ### `ynh_use_logrotate` is used to configure a logrotate configuration for the logs of this app.
 ### Use this helper only if there is effectively a log file for this app.
