@@ -35,6 +35,8 @@ source /usr/share/yunohost/helpers
 #foo="bar"
 #ynh_app_setting_set --app=$app --key=foo --value=$foo
 ynh_app_setting_set --app=$app --key=project_name --value=$app
+ynh_app_setting_set --app=$app --key=AUTH_USER --value="admin"
+ynh_app_setting_set --app=$app --key=AUTH_PASSWORD --value="changeme"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
