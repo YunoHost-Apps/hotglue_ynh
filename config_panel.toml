@@ -43,8 +43,8 @@ version = "1.0"
 
 ## Define the label for your panel
 ## Internationalization works similarly to the 'description' and 'ask' questions in the manifest
-# name.en = "Main configuration"
-# name.fr = "Configuration principale"
+name.en = "Main configuration"
+name.fr = "Configuration principale"
 
 ## (optional) If you need to trigger a service reload-or-restart after the user
 ## change a question in this panel, you can add your service in the list.
@@ -100,7 +100,7 @@ services = ["__APP__"]
     ##
     ## Also, keep in mind that this feature only works in the webadmin and not in CLI
     ## (therefore a user could be prompted in CLI for a question that may not be relevant)
-    # visible = true
+    visible = true
 
         ########################################################################
         #### ABOUT QUESTIONS
@@ -224,7 +224,7 @@ services = ["__APP__"]
         ########################################################################
         
         ## (optional) An help text for the question
-        help = "Fill the name of the project which will received donation"
+        #help = "Fill the name of the project which will received donation"
 
         ## (optional) An example display as placeholder in web form
         # example = "YunoHost"
@@ -235,78 +235,78 @@ services = ["__APP__"]
         ## (optional) for boolean questions you can specify replacement values 
         ## bound to true and false, in case property is bound to config file
         # useful if bound property in config file expects something else than integer 1
-        yes = "Enable" 
+        #yes = "Enable" 
         # useful if bound property in config file expects something else than integer 0
-        no = "Disable" 
+        #no = "Disable" 
 
         ## (optional) A validation pattern
         ## ---------------------------------------------------------------------
         ## IMPORTANT: your pattern should be between simple quote, not double.
         ## ---------------------------------------------------------------------
-        pattern.regexp = '^\w{3,30}$'
-        pattern.error = "The name should be at least 3 chars and less than 30 chars. Alphanumeric chars are accepted"
+        #pattern.regexp = '^\w{3,30}$'
+        #pattern.error = "The name should be at least 3 chars and less than 30 chars. Alphanumeric chars are accepted"
 
         ## Note: visible and optional properties are also available for questions
 
 
-        [main.customization.contact_url]
-        ask = "Contact url"
-        type = "url"
-        example = "mailto: contact@example.org"
-        help = "mailto: accepted"
-        pattern.regexp = '^mailto:[^@]+@[^@]+|https://$'
-        pattern.error = "Should be https or mailto:"
-        bind = ":/var/www/__APP__/settings.py"
+        # [main.customization.contact_url]
+        # ask = "Contact url"
+        # type = "url"
+        # example = "mailto: contact@example.org"
+        # help = "mailto: accepted"
+        # pattern.regexp = '^mailto:[^@]+@[^@]+|https://$'
+        # pattern.error = "Should be https or mailto:"
+        # bind = ":/var/www/__APP__/settings.py"
 
-        [main.customization.logo]
-        ask = "Logo"
-        type = "file"
-        accept = ".png"
-        help = "Fill with an already resized logo"
-        bind = "__INSTALL_DIR__/img/logo.png"
+        # [main.customization.logo]
+        # ask = "Logo"
+        # type = "file"
+        # accept = ".png"
+        # help = "Fill with an already resized logo"
+        # bind = "__INSTALL_DIR__/img/logo.png"
         
-        [main.customization.favicon]
-        ask = "Favicon"
-        type = "file"
-        accept = ".png"
-        help = "Fill with an already sized favicon"
-        bind = "__INSTALL_DIR__/img/favicon.png"
+        # [main.customization.favicon]
+        # ask = "Favicon"
+        # type = "file"
+        # accept = ".png"
+        # help = "Fill with an already sized favicon"
+        # bind = "__INSTALL_DIR__/img/favicon.png"
 
         
-    [main.stripe]
-    name = "Stripe general info"
-    optional = false
+    # [main.stripe]
+    # name = "Stripe general info"
+    # optional = false
 
-        # The next alert is overwrited with a getter from the config script
-        [main.stripe.amount]
-        ask = "Donation in the month : XX €"
-        type = "alert"
-        style = "success"
+    #     # The next alert is overwrited with a getter from the config script
+    #     [main.stripe.amount]
+    #     ask = "Donation in the month : XX €"
+    #     type = "alert"
+    #     style = "success"
 
-        [main.stripe.publishable_key]
-        ask = "Publishable key"
-        type = "string"
-        redact = true
-        help = "Indicate here the stripe publishable key"
-        bind = ":/var/www/__APP__/settings.py"
+    #     [main.stripe.publishable_key]
+    #     ask = "Publishable key"
+    #     type = "string"
+    #     redact = true
+    #     help = "Indicate here the stripe publishable key"
+    #     bind = ":/var/www/__APP__/settings.py"
 
-        [main.stripe.secret_key]
-        ask = "Secret key"
-        type = "string"
-        redact = true
-        help = "Indicate here the stripe secret key"
-        bind = ":/var/www/__APP__/settings.py"
+    #     [main.stripe.secret_key]
+    #     ask = "Secret key"
+    #     type = "string"
+    #     redact = true
+    #     help = "Indicate here the stripe secret key"
+    #     bind = ":/var/www/__APP__/settings.py"
         
-        [main.stripe.prices]
-        ask = "Prices ID"
-        type = "tags"
-        help = """\
-        Indicates here the prices ID of donation products you created in stripe interfaces. \
-        Go on [Stripe products](https://dashboard.stripe.com/products) to create those donation products. \
-        Fill it tag with 'FREQUENCY/CURRENCY/PRICE_ID' \
-        FREQUENCY: 'one_time' or 'recuring' \
-        CURRENCY: 'EUR' or 'USD' \
-        PRICE_ID: ID from stripe interfaces starting with 'price_' \
-        """
-        pattern.regexp = '^(one_time|recuring)/(EUR|USD)/price_.*$'
-        pattern.error = "Please respect the format describe in help text for each price ID"
+    #     [main.stripe.prices]
+    #     ask = "Prices ID"
+    #     type = "tags"
+    #     help = """\
+    #     Indicates here the prices ID of donation products you created in stripe interfaces. \
+    #     Go on [Stripe products](https://dashboard.stripe.com/products) to create those donation products. \
+    #     Fill it tag with 'FREQUENCY/CURRENCY/PRICE_ID' \
+    #     FREQUENCY: 'one_time' or 'recuring' \
+    #     CURRENCY: 'EUR' or 'USD' \
+    #     PRICE_ID: ID from stripe interfaces starting with 'price_' \
+    #     """
+    #     pattern.regexp = '^(one_time|recuring)/(EUR|USD)/price_.*$'
+    #     pattern.error = "Please respect the format describe in help text for each price ID"
