@@ -36,7 +36,7 @@ source /usr/share/yunohost/helpers
 #ynh_app_setting_set --app=$app --key=foo --value=$foo
 #username="admin"
 #password="changeme"
-ynh_app_setting_set --app=$app --key=project_name --value=$app
+# ynh_app_setting_set --app=$app --key=project_name --value=$app
 #ynh_app_setting_set --app=$app --key=AUTH_USER --value=$username
 #ynh_app_setting_set --app=$app --key=AUTH_PASSWORD --value=$password
 
@@ -75,6 +75,7 @@ ynh_script_progression --message="Adding $app's configuration files..." --weight
 ### Check the documentation of `ynh_add_config` for more info.
 
 ynh_add_config --template="user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
+ynh_add_config --template="user.inc.php" --destination="$install_dir/user.inc.php"
 
 # FIXME: this should be handled by the core in the future
 ### You may need to use chmod 600 instead of 400,
