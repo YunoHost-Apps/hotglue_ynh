@@ -141,9 +141,9 @@ services = ["__APP__"]
         ask.en = "Username"
         type = "string"
 
-        [main.customization.AUTH_PASSWORD]
-        ask.en = "Password"
-        type = "string"
+        #[main.customization.AUTH_PASSWORD]
+        #ask.en = "Password"
+        #type = "string"
         
         ########################################################################
         #### ABOUT THE BIND PROPERTY
