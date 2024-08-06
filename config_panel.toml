@@ -178,7 +178,7 @@ services = ["__APP__"]
         ## In that case, the key name can be specified before the column ':'
         
         #bind = "name:/var/www/__APP__/settings.py"
-        bind = ":/var/www/__APP__/user-config.inc.php"
+        bind = ":/var/www/__APP__/user.inc.php"
 
         [main.customization.AUTH_USER]
         ask.en = "Username"
