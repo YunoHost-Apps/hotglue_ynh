@@ -26,6 +26,8 @@ source /usr/share/yunohost/helpers
 ### $app is the app id (i.e. 'example' for first install,
 ### or 'example__2', '__3', ... for multi-instance installs)
 
+project_name = $app
+
 #=================================================
 # INITIALIZE AND STORE SETTINGS
 #=================================================
