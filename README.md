@@ -5,6 +5,10 @@ and the people from WORM (worm.org)
 with support from the Mondriaan Foundation
 made for you
 
+HOTGLUE is a visual tool for creating websites directly in the web-browser. Whether you want to make a personal webpage, online gallery or a website for your band - HOTGLUE is an interesting alternative to over-complicated systems like Wordpress, Drupal, etc.
+
+You will enjoy the simplicity of the user interface and fast learning curve – making a website with HOTGLUE is just as easy as making a paper collage!
+
 ![Screenshot of Example app](./doc/screenshots/example.jpg)
 
 Hotglue repo https://github.com/k0a1a/hotglue2
