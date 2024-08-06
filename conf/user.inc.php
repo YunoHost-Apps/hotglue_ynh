@@ -12,6 +12,7 @@
  *
  */
 
+$project_name = 'Hotglue';
 $AUTH_USER = 'admin';
 $AUTH_PASSWORD = 'changeme';
 
