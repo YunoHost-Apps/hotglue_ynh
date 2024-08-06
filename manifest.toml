@@ -96,8 +96,22 @@ ram.runtime = "50M"
     url = "https://github.com/k0a1a/hotglue2/archive/refs/tags/release.tar.gz"
     sha256 = "48fe7d5c6075a9729da038ad46e154a86a6c7f644306d88db761413cbbeeae4d"
 
+    [resources.system_user]
+    # This will provision/deprovision a unix system user
+
+    [resources.install_dir]
+    # This will create/remove the install dir as /var/www/$app
+    # and store the corresponding setting $install_dir
+
+    [resources.data_dir]
+    # This will create/remove the data dir as /home/yunohost.app/$app
+    # and store the corresponding setting $data_dir
+
     [resources.permissions]
     main.url = "/"
+
+    [resources.ports]
+    # This will pick a random port for reverse-proxying and store it as the $port setting
 
     [resources.apt]
     packages = "php7.4 php7.4-fpm php7.4-gd"
