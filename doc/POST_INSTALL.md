@@ -1,6 +1,7 @@
-This is a dummy disclaimer to display after the install
+In order to start editing you need to add '/edit' to the end of the URL,
+for example: <https://__DOMAIN____PATH__/edit>
 
-The app url is <https://__DOMAIN____PATH__>
+Default editor's credentials: *admin/changeme*
 
 The app install dir is `__INSTALL_DIR__`
 
