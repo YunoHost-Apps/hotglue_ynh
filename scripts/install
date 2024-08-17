@@ -35,8 +35,8 @@ source /usr/share/yunohost/helpers
 #foo="bar"
 #ynh_app_setting_set --app=$app --key=foo --value=$foo
 
-ynh_app_setting_set --app=$app --key="username" --value="admin"
-ynh_app_setting_set --app=$app --key="password" --value="changeme"
+ynh_app_setting_set --app=$app --key=username --value="admin"
+ynh_app_setting_set --app=$app --key=password --value="changeme"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -121,7 +121,7 @@ ynh_add_nginx_config
 ###   - And the section "SETUP SYSTEMD" in the upgrade script
 
 # Create a dedicated systemd config
-## ynh_add_systemd_config
+ynh_add_systemd_config
 
 ### `yunohost service add` integrates a service in YunoHost. It then gets
 ### displayed in the admin interface and through the others `yunohost service` commands.
@@ -190,7 +190,7 @@ ynh_script_progression --message="Starting $app's systemd service..." --weight=1
 ###   - And the section "STOP SYSTEMD SERVICE" and "START SYSTEMD SERVICE" in the change_url script
 
 # Start a systemd service
-## ynh_systemd_action --service_name="$app" --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name="$app" --action="start" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT
