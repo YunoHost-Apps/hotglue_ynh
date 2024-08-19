@@ -55,7 +55,7 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/k0a1a/hotglue2/archive/refs/tags/release.tar.gz"
+    url = "https://github.com/k0a1a/hotglue2/archive/refs/tags/dev-release.zip"
     sha256 = "48fe7d5c6075a9729da038ad46e154a86a6c7f644306d88db761413cbbeeae4d"
 
     [resources.system_user]
@@ -66,4 +66,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php7.4 php7.4-fpm php7.4-gd"
+    packages = "php8.2 php8.2-fpm php8.2-gd"
