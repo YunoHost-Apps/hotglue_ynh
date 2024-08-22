@@ -55,8 +55,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/k0a1a/hotglue2/archive/refs/tags/release.tar.gz"
-    sha256 = "48fe7d5c6075a9729da038ad46e154a86a6c7f644306d88db761413cbbeeae4d"
+    url = "https://github.com/k0a1a/hotglue2/archive/refs/tags/dev-release.tar.gz"
+    sha256 = "8152c8cffaad57be03b33326d0939f12935a1fbd57718410d33e689e9eca6336"
 
     [resources.system_user]
     
