@@ -23,10 +23,10 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 ynh_script_progression --message="Updating $app's configuration files..." --weight=1
 
-ynh_add_config --template="some_config_file" --destination="$install_dir/some_config_file"
+ynh_add_config --template="user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
 
-chmod 400 "$install_dir/some_config_file"
-chown "$app:$app" "$install_dir/some_config_file"
+chmod -R 600 "$install_dir/user-config.inc.php"
+chown -R "$app:$app" "$install_dir/user-config.inc.php"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS

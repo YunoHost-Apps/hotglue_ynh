@@ -12,7 +12,6 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression --message="Updating NGINX web server configuration..." --weight=1
 
-# this will most likely adjust NGINX config correctly
 ynh_change_url_nginx_config
 
 #=================================================
