@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada Hotglue](./doc/screenshots/example.jpg)
+![Tangkapan Layar pada Hotglue](./doc/screenshots/screenshot.jpg)
 
 ## Dokumentasi dan sumber daya
 

@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## Screenshots
 
-![Screenshot of Hotglue](./doc/screenshots/example.jpg)
+![Screenshot of Hotglue](./doc/screenshots/screenshot.jpg)
 
 ## Documentation and resources
 

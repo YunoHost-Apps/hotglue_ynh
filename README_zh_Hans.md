@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## 截图
 
-![Hotglue 的截图](./doc/screenshots/example.jpg)
+![Hotglue 的截图](./doc/screenshots/screenshot.jpg)
 
 ## 文档与资源
 

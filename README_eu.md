@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## Pantaila-argazkiak
 
-![Hotglue(r)en pantaila-argazkia](./doc/screenshots/example.jpg)
+![Hotglue(r)en pantaila-argazkia](./doc/screenshots/screenshot.jpg)
 
 ## Dokumentazioa eta baliabideak
 
