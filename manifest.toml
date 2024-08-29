@@ -39,6 +39,10 @@ ram.runtime = "50M"
     type = "path"
     default = "/hotglue"
 
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
     [install.admin]
     type = "user"
 
