@@ -4,14 +4,14 @@ packaging_format = 2
 
 id = "hotglue"
 name = "Hotglue"
-description.en = "HOTGLUE is a Content Manipulation System which allows to construct websites directly in a web-browser."
+description.en = "Content Manipulation System which allows to construct websites directly in a web-browser"
 
 version = "1.4~ynh1"
 
 maintainers = ["k0a1a"]
 
 [upstream]
-license = "GNU GENERAL PUBLIC LICENSE"
+license = "GPL-3.0"
 website = "https://hotglue.me"
 demo = "https://hotglue.me/demo/"
 admindoc = "https://discourse.superglue.it/c/hotglue"
@@ -39,11 +39,11 @@ ram.runtime = "50M"
     type = "path"
     default = "/hotglue"
 
-    [install.language]
-    ask.en = "Choose the application language"
-    type = "select"
-    choices = ["en"]
-    default = "en"
+    [install.admin]
+    type = "user"
+
+    [install.password]
+    type = "password"
 
 [resources]
     [resources.sources]
