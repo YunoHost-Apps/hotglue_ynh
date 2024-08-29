@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "hotglue"
-name = "Hotglue app"
+name = "Hotglue"
 description.en = "HOTGLUE is a Content Manipulation System which allows to construct websites directly in a web-browser."
 
 version = "1.4~ynh1"
@@ -19,19 +19,13 @@ userdoc = "https://discourse.superglue.it/c/hotglue"
 code = "https://github.com/k0a1a/hotglue2"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.28"
 architectures = "all"
 multi_instance = true
 
-# FIXME: replace with true, false, or "not_relevant".
-# Not to confuse with the "sso" key: the "ldap" key corresponds to wether or not a user *can* login on the app using
-# its YunoHost credentials.
-ldap = "true"
+ldap = true
 
-# FIXME: replace with true, false, or "not_relevant".
-# Not to confuse with the "ldap" key: the "sso" key corresponds to wether or not a user is *automatically logged-in*
-# on the app when logged-in on the YunoHost portal.
-sso = "?"
+sso = false
 
 disk = "50M"
 ram.build = "50M"
@@ -66,4 +60,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php8.2 php8.2-fpm php8.2-gd"
+    packages = "php8.2-gd"
