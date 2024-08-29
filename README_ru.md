@@ -3,15 +3,15 @@
 Он НЕ ДОЛЖЕН редактироваться вручную.
 -->
 
-# Hotglue app для YunoHost
+# Hotglue для YunoHost
 
 [![Уровень интеграции](https://dash.yunohost.org/integration/hotglue.svg)](https://ci-apps.yunohost.org/ci/apps/hotglue/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/hotglue.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/hotglue.maintain.svg)
 
-[![Установите Hotglue app с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
+[![Установите Hotglue с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
 
 *[Прочтите этот README на других языках.](./ALL_README.md)*
 
-> *Этот пакет позволяет Вам установить Hotglue app быстро и просто на YunoHost-сервер.*  
+> *Этот пакет позволяет Вам установить Hotglue быстро и просто на YunoHost-сервер.*  
 > *Если у Вас нет YunoHost, пожалуйста, посмотрите [инструкцию](https://yunohost.org/install), чтобы узнать, как установить его.*
 
 ## Обзор
@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## Снимки экрана
 
-![Снимок экрана Hotglue app](./doc/screenshots/example.jpg)
+![Снимок экрана Hotglue](./doc/screenshots/example.jpg)
 
 ## Документация и ресурсы
 

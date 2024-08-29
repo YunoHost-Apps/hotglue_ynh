@@ -3,15 +3,15 @@ N.B.: README ini dibuat secara otomatis oleh <https://github.com/YunoHost/apps/t
 Ini TIDAK boleh diedit dengan tangan.
 -->
 
-# Hotglue app untuk YunoHost
+# Hotglue untuk YunoHost
 
 [![Tingkat integrasi](https://dash.yunohost.org/integration/hotglue.svg)](https://ci-apps.yunohost.org/ci/apps/hotglue/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/hotglue.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/hotglue.maintain.svg)
 
-[![Pasang Hotglue app dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
+[![Pasang Hotglue dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
 
 *[Baca README ini dengan bahasa yang lain.](./ALL_README.md)*
 
-> *Paket ini memperbolehkan Anda untuk memasang Hotglue app secara cepat dan mudah pada server YunoHost.*  
+> *Paket ini memperbolehkan Anda untuk memasang Hotglue secara cepat dan mudah pada server YunoHost.*  
 > *Bila Anda tidak mempunyai YunoHost, silakan berkonsultasi dengan [panduan](https://yunohost.org/install) untuk mempelajari bagaimana untuk memasangnya.*
 
 ## Ringkasan
@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada Hotglue app](./doc/screenshots/example.jpg)
+![Tangkapan Layar pada Hotglue](./doc/screenshots/example.jpg)
 
 ## Dokumentasi dan sumber daya
 
