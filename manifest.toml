@@ -4,7 +4,8 @@ packaging_format = 2
 
 id = "hotglue"
 name = "Hotglue"
-description.en = "Content Manipulation System which allows to construct websites directly in a web-browser"
+description.en = "Content manipulation system for building websites"
+description.fr = "Système de manipulation de contenu pour la création de sites Web"
 
 version = "1.04~ynh1"
 
