@@ -19,7 +19,8 @@ userdoc = "https://discourse.superglue.it/c/hotglue"
 code = "https://github.com/k0a1a/hotglue2"
 
 [integration]
-yunohost = ">= 11.2.28"
+yunohost = ">= 11.2.18"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
@@ -59,6 +60,7 @@ ram.runtime = "50M"
     [resources.system_user]
     
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.permissions]
     main.url = "/"

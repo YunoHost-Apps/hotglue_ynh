@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
@@ -11,19 +10,18 @@ source /usr/share/yunohost/helpers
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Upgrading source files..." --weight=1
+ynh_script_progression "Upgrading source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
 
-chown -R "$app:www-data" "$install_dir"
-
+#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R "$app:www-data" "$install_dir"
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression --message="Updating $app's configuration files..." --weight=1
+ynh_script_progression "Updating $app's configuration files..."
 
-ynh_add_config --template="user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
+ynh_config_add --template="user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
 
 chmod -R 600 "$install_dir/user-config.inc.php"
 chown -R "$app:$app" "$install_dir/user-config.inc.php"
@@ -31,14 +29,14 @@ chown -R "$app:$app" "$install_dir/user-config.inc.php"
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
-ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
+ynh_script_progression "Upgrading system configurations related to $app..."
 
-ynh_add_fpm_config
+ynh_config_add_phpfpm
 
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Upgrade of $app completed" --last
+ynh_script_progression "Upgrade of $app completed"
