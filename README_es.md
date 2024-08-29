@@ -3,15 +3,15 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Hotglue app para Yunohost
+# Hotglue para Yunohost
 
 [![Nivel de integración](https://dash.yunohost.org/integration/hotglue.svg)](https://ci-apps.yunohost.org/ci/apps/hotglue/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/hotglue.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/hotglue.maintain.svg)
 
-[![Instalar Hotglue app con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
+[![Instalar Hotglue con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
 
 *[Leer este README en otros idiomas.](./ALL_README.md)*
 
-> *Este paquete le permite instalarHotglue app rapidamente y simplement en un servidor YunoHost.*  
+> *Este paquete le permite instalarHotglue rapidamente y simplement en un servidor YunoHost.*  
 > *Si no tiene YunoHost, visita [the guide](https://yunohost.org/install) para aprender como instalarla.*
 
 ## Descripción general
@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## Capturas
 
-![Captura de Hotglue app](./doc/screenshots/example.jpg)
+![Captura de Hotglue](./doc/screenshots/example.jpg)
 
 ## Documentaciones y recursos
 

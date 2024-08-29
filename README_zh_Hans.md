@@ -3,15 +3,15 @@
 请勿手动编辑。
 -->
 
-# YunoHost 上的 Hotglue app
+# YunoHost 上的 Hotglue
 
 [![集成程度](https://dash.yunohost.org/integration/hotglue.svg)](https://ci-apps.yunohost.org/ci/apps/hotglue/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/hotglue.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/hotglue.maintain.svg)
 
-[![使用 YunoHost 安装 Hotglue app](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
+[![使用 YunoHost 安装 Hotglue](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
 
 *[阅读此 README 的其它语言版本。](./ALL_README.md)*
 
-> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 Hotglue app。*  
+> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 Hotglue。*  
 > *如果您还没有 YunoHost，请参阅[指南](https://yunohost.org/install)了解如何安装它。*
 
 ## 概况
@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## 截图
 
-![Hotglue app 的截图](./doc/screenshots/example.jpg)
+![Hotglue 的截图](./doc/screenshots/example.jpg)
 
 ## 文档与资源
 

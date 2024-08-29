@@ -3,15 +3,15 @@ Ohart ongi: README hau automatikoki sortu da <https://github.com/YunoHost/apps/t
 EZ editatu eskuz.
 -->
 
-# Hotglue app YunoHost-erako
+# Hotglue YunoHost-erako
 
 [![Integrazio maila](https://dash.yunohost.org/integration/hotglue.svg)](https://ci-apps.yunohost.org/ci/apps/hotglue/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/hotglue.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/hotglue.maintain.svg)
 
-[![Instalatu Hotglue app YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
+[![Instalatu Hotglue YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
 
 *[Irakurri README hau beste hizkuntzatan.](./ALL_README.md)*
 
-> *Pakete honek Hotglue app YunoHost zerbitzari batean azkar eta zailtasunik gabe instalatzea ahalbidetzen dizu.*  
+> *Pakete honek Hotglue YunoHost zerbitzari batean azkar eta zailtasunik gabe instalatzea ahalbidetzen dizu.*  
 > *YunoHost ez baduzu, kontsultatu [gida](https://yunohost.org/install) nola instalatu ikasteko.*
 
 ## Aurreikuspena
@@ -29,7 +29,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 ## Pantaila-argazkiak
 
-![Hotglue app(r)en pantaila-argazkia](./doc/screenshots/example.jpg)
+![Hotglue(r)en pantaila-argazkia](./doc/screenshots/example.jpg)
 
 ## Dokumentazioa eta baliabideak
 
