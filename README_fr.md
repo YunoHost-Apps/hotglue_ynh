@@ -16,12 +16,10 @@ Il NE doit PAS être modifié à la main.
 
 ## Vue d’ensemble
 
-Hotglue is a Content Manipulation Software that allows visual consistency between editing and viewing.
-In order to start editing you need to add '/edit' to the end of the URL, eg https://hotglue.me/demo/edit
+Hotglue est un logiciel de manipulation de contenu qui permet une cohérence visuelle entre l'édition et la visualisation.
+Pour commencer l'édition, vous devez ajouter `__DOMAIN____PATH__/edit` à la fin de l'URL, par exemple https://hotglue.me/demo/edit
 
-Checkout other Hotglue sites: https://hotglue.me/latest
-
-
+Consultez d'autres sites Hotglue : https://hotglue.me/latest
 
 **Version incluse :** 1.04~ynh1
 
