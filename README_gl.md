@@ -23,7 +23,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**Versión proporcionada:** 1.4~ynh1
+**Versión proporcionada:** 1.04~ynh1
 
 **Demo:** <https://hotglue.me/demo/>
 

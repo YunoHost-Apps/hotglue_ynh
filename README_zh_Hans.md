@@ -23,7 +23,7 @@ Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**分发版本：** 1.4~ynh1
+**分发版本：** 1.04~ynh1
 
 **演示：** <https://hotglue.me/demo/>
 
