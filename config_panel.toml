@@ -12,6 +12,7 @@ name = "Hotglue configuration"
         type = "string"
         optional = false
         help = "Cannot be empty"
+        bind = ":__INSTALL_DIR__/user-config.inc.php"
 
         [main.hotglue.password]
         ask = "Set password"
@@ -19,4 +20,5 @@ name = "Hotglue configuration"
         optional = true
         visible = "username"
         help = "If a password already exists, leave blank and it will not be replaced."
+        bind = ":__INSTALL_DIR__/user-config.inc.php"
 
