@@ -17,13 +17,12 @@
 ## 概况
 
 Hotglue is a Content Manipulation Software that allows visual consistency between editing and viewing.
-In order to start editing you need to add `__DOMAIN____PATH__/edit` to the end of the URL, eg https://hotglue.me/demo/edit
 
 Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**分发版本：** 1.04~ynh1
+**分发版本：** 1.04~ynh2
 
 **演示：** <https://hotglue.me/demo/>
 
