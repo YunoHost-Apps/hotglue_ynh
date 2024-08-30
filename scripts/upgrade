@@ -8,6 +8,16 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# ENSURE DOWNWARD COMPATIBILITY
+#=================================================
+ynh_script_progression "Ensuring downward compatibility..."
+
+if [ -z "${password:-}" ]; then
+	password=$(ynh_string_random --length=16)
+	ynh_app_setting_set --app=$app --key=password --value="$password"
+fi
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
