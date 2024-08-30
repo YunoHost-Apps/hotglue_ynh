@@ -3,33 +3,33 @@ N.B.: README ini dibuat secara otomatis oleh <https://github.com/YunoHost/apps/t
 Ini TIDAK boleh diedit dengan tangan.
 -->
 
-# Hotglue app untuk YunoHost
+# Hotglue untuk YunoHost
 
 [![Tingkat integrasi](https://dash.yunohost.org/integration/hotglue.svg)](https://ci-apps.yunohost.org/ci/apps/hotglue/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/hotglue.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/hotglue.maintain.svg)
 
-[![Pasang Hotglue app dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
+[![Pasang Hotglue dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
 
 *[Baca README ini dengan bahasa yang lain.](./ALL_README.md)*
 
-> *Paket ini memperbolehkan Anda untuk memasang Hotglue app secara cepat dan mudah pada server YunoHost.*  
+> *Paket ini memperbolehkan Anda untuk memasang Hotglue secara cepat dan mudah pada server YunoHost.*  
 > *Bila Anda tidak mempunyai YunoHost, silakan berkonsultasi dengan [panduan](https://yunohost.org/install) untuk mempelajari bagaimana untuk memasangnya.*
 
 ## Ringkasan
 
 Hotglue is a Content Manipulation Software that allows visual consistency between editing and viewing.
-In order to start editing you need to add '/edit' to the end of the URL, eg https://hotglue.me/demo/edit
+In order to start editing you need to add `__DOMAIN____PATH__/edit` to the end of the URL, eg https://hotglue.me/demo/edit
 
 Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**Versi terkirim:** 1.4~ynh1
+**Versi terkirim:** 1.04~ynh1
 
 **Demo:** <https://hotglue.me/demo/>
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada Hotglue app](./doc/screenshots/example.jpg)
+![Tangkapan Layar pada Hotglue](./doc/screenshots/screenshot.jpg)
 
 ## Dokumentasi dan sumber daya
 

@@ -3,15 +3,16 @@
 packaging_format = 2
 
 id = "hotglue"
-name = "Hotglue app"
-description.en = "HOTGLUE is a Content Manipulation System which allows to construct websites directly in a web-browser."
+name = "Hotglue"
+description.en = "Content manipulation system for building websites"
+description.fr = "Système de manipulation de contenu pour la création de sites Web"
 
-version = "1.4~ynh1"
+version = "1.04~ynh1"
 
 maintainers = ["k0a1a"]
 
 [upstream]
-license = "GNU GENERAL PUBLIC LICENSE"
+license = "GPL-3.0"
 website = "https://hotglue.me"
 demo = "https://hotglue.me/demo/"
 admindoc = "https://discourse.superglue.it/c/hotglue"
@@ -19,22 +20,16 @@ userdoc = "https://discourse.superglue.it/c/hotglue"
 code = "https://github.com/k0a1a/hotglue2"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.28"
 architectures = "all"
 multi_instance = true
 
-# FIXME: replace with true, false, or "not_relevant".
-# Not to confuse with the "sso" key: the "ldap" key corresponds to wether or not a user *can* login on the app using
-# its YunoHost credentials.
-ldap = "true"
+ldap = true
 
-# FIXME: replace with true, false, or "not_relevant".
-# Not to confuse with the "ldap" key: the "sso" key corresponds to wether or not a user is *automatically logged-in*
-# on the app when logged-in on the YunoHost portal.
-sso = "?"
+sso = false
 
-disk = "50M"
-ram.build = "50M"
+disk = "130M"
+ram.build = "100M"
 ram.runtime = "50M"
 
 [install]
@@ -45,11 +40,9 @@ ram.runtime = "50M"
     type = "path"
     default = "/hotglue"
 
-    [install.language]
-    ask.en = "Choose the application language"
-    type = "select"
-    choices = ["en"]
-    default = "en"
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
 
 [resources]
     [resources.sources]
@@ -66,4 +59,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php8.2 php8.2-fpm php8.2-gd"
+    packages = "php8.3-gd"

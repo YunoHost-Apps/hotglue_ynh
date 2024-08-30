@@ -3,33 +3,33 @@
 请勿手动编辑。
 -->
 
-# YunoHost 上的 Hotglue app
+# YunoHost 上的 Hotglue
 
 [![集成程度](https://dash.yunohost.org/integration/hotglue.svg)](https://ci-apps.yunohost.org/ci/apps/hotglue/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/hotglue.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/hotglue.maintain.svg)
 
-[![使用 YunoHost 安装 Hotglue app](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
+[![使用 YunoHost 安装 Hotglue](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hotglue)
 
 *[阅读此 README 的其它语言版本。](./ALL_README.md)*
 
-> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 Hotglue app。*  
+> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 Hotglue。*  
 > *如果您还没有 YunoHost，请参阅[指南](https://yunohost.org/install)了解如何安装它。*
 
 ## 概况
 
 Hotglue is a Content Manipulation Software that allows visual consistency between editing and viewing.
-In order to start editing you need to add '/edit' to the end of the URL, eg https://hotglue.me/demo/edit
+In order to start editing you need to add `__DOMAIN____PATH__/edit` to the end of the URL, eg https://hotglue.me/demo/edit
 
 Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**分发版本：** 1.4~ynh1
+**分发版本：** 1.04~ynh1
 
 **演示：** <https://hotglue.me/demo/>
 
 ## 截图
 
-![Hotglue app 的截图](./doc/screenshots/example.jpg)
+![Hotglue 的截图](./doc/screenshots/screenshot.jpg)
 
 ## 文档与资源
 
