@@ -12,7 +12,9 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 password=$YNH_APP_ARG_PASSWORD
+admin=$YNH_APP_ARG_ADMIN
 ynh_app_setting_set --key=password --value=$password
+ynh_app_setting_set --key=admin --value=$admin
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
