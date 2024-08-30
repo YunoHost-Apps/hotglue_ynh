@@ -17,19 +17,18 @@ It shall NOT be edited by hand.
 ## Overview
 
 Hotglue is a Content Manipulation Software that allows visual consistency between editing and viewing.
-In order to start editing you need to add '/edit' to the end of the URL, eg https://hotglue.me/demo/edit
 
 Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**Shipped version:** 1.04~ynh1
+**Shipped version:** 1.04~ynh2
 
 **Demo:** <https://hotglue.me/demo/>
 
 ## Screenshots
 
-![Screenshot of Hotglue](./doc/screenshots/example.jpg)
+![Screenshot of Hotglue](./doc/screenshots/screenshot.jpg)
 
 ## Documentation and resources
 

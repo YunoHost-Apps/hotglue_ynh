@@ -17,19 +17,18 @@
 ## Обзор
 
 Hotglue is a Content Manipulation Software that allows visual consistency between editing and viewing.
-In order to start editing you need to add '/edit' to the end of the URL, eg https://hotglue.me/demo/edit
 
 Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**Поставляемая версия:** 1.04~ynh1
+**Поставляемая версия:** 1.04~ynh2
 
 **Демо-версия:** <https://hotglue.me/demo/>
 
 ## Снимки экрана
 
-![Снимок экрана Hotglue](./doc/screenshots/example.jpg)
+![Снимок экрана Hotglue](./doc/screenshots/screenshot.jpg)
 
 ## Документация и ресурсы
 

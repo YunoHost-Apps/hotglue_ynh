@@ -4,9 +4,10 @@ packaging_format = 2
 
 id = "hotglue"
 name = "Hotglue"
-description.en = "Content Manipulation System which allows to construct websites directly in a web-browser"
+description.en = "Content manipulation system for building websites"
+description.fr = "Système de manipulation de contenu pour la création de sites Web"
 
-version = "1.04~ynh1"
+version = "1.04~ynh2"
 
 maintainers = ["k0a1a"]
 
@@ -28,8 +29,8 @@ ldap = true
 
 sso = false
 
-disk = "50M"
-ram.build = "50M"
+disk = "130M"
+ram.build = "100M"
 ram.runtime = "50M"
 
 [install]
@@ -43,12 +44,6 @@ ram.runtime = "50M"
     [install.init_main_permission]
     type = "group"
     default = "visitors"
-
-    [install.admin]
-    type = "user"
-
-    [install.password]
-    type = "password"
 
 [resources]
     [resources.sources]

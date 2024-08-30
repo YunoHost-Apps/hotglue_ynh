@@ -17,19 +17,18 @@ Ini TIDAK boleh diedit dengan tangan.
 ## Ringkasan
 
 Hotglue is a Content Manipulation Software that allows visual consistency between editing and viewing.
-In order to start editing you need to add '/edit' to the end of the URL, eg https://hotglue.me/demo/edit
 
 Checkout other Hotglue sites: https://hotglue.me/latest
 
 
 
-**Versi terkirim:** 1.04~ynh1
+**Versi terkirim:** 1.04~ynh2
 
 **Demo:** <https://hotglue.me/demo/>
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada Hotglue](./doc/screenshots/example.jpg)
+![Tangkapan Layar pada Hotglue](./doc/screenshots/screenshot.jpg)
 
 ## Dokumentasi dan sumber daya
 
