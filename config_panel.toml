@@ -7,7 +7,7 @@ name = "Hotglue configuration"
 
     [main.hotglue]
     name = "Editing credentials"
-        [main.hotglue.username]
+        [main.hotglue.admin]
         ask = "Set username"
         type = "string"
         optional = false
