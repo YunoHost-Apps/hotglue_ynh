@@ -17,6 +17,8 @@ if [ -z "${password:-}" ]; then
 	ynh_app_setting_set --app=$app --key=password --value="$password"
 fi
 
+ynh_app_setting_set_default --key=admin --value="$admin"
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
