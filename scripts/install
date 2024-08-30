@@ -8,13 +8,6 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# INITIALIZE AND STORE SETTINGS
-#=================================================
-
-ynh_app_setting_set --app=$app --key=username --value="admin"
-ynh_app_setting_set --app=$app --key=password --value="changeme"
-
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1

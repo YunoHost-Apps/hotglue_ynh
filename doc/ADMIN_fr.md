@@ -1,0 +1,1 @@
+Identifiants de l'éditeur par défaut : admin/changeme

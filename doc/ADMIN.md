@@ -1,0 +1,1 @@
+Default editor's credentials: admin/changeme
