@@ -7,7 +7,7 @@ name = "Hotglue"
 description.en = "Content manipulation system for building websites"
 description.fr = "Système de manipulation de contenu pour la création de sites Web"
 
-version = "1.04~ynh1"
+version = "1.04~ynh2"
 
 maintainers = ["k0a1a"]
 
