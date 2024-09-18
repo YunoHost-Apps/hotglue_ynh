@@ -14,13 +14,13 @@
 
 source /usr/share/yunohost/helpers
 
-ynh_abort_if_errors
+#REMOVEME? ynh_abort_if_errors
 
 #=================================================
 # RETRIEVE ARGUMENTS
 #=================================================
 
-install_dir=$(ynh_app_setting_get --app="$app" --key=install_dir)
+install_dir=$(ynh_app_setting_get --key=install_dir)
 
 #=================================================
 # SPECIFIC GETTERS FOR TOML SHORT KEY
@@ -29,14 +29,14 @@ install_dir=$(ynh_app_setting_get --app="$app" --key=install_dir)
 set__password() {
     if [ "$password" == "" ]
     then
-        ynh_app_setting_set --app=$app --key=password --value="$password"
+        ynh_app_setting_set --key=password --value="$password"
     fi
 }
 
 set__username() {
     if [ "$username" == "" ]
     then
-        ynh_app_setting_set --app=$app --key=username --value="$username"
+        ynh_app_setting_set --key=username --value="$username"
     fi
 }
 
@@ -45,7 +45,7 @@ ynh_app_config_validate() {
 
     if [ "$username" == "" ]
     then
-        ynh_die --message="You need to set a username"
+        ynh_die "You need to set a username"
     fi
 }
 
@@ -59,7 +59,5 @@ ynh_app_config_apply() {
     fi
 }
 
-#=================================================
-# GENERIC FINALIZATION
 #=================================================
 ynh_app_config_run "$1"

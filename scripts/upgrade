@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
@@ -9,21 +8,30 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# ENSURE DOWNWARD COMPATIBILITY
+#=================================================
+ynh_script_progression "Ensuring downward compatibility..."
+
+if [ -z "${password:-}" ]; then
+	password=$(ynh_string_random --length=16)
+	ynh_app_setting_set --app=$app --key=password --value="$password"
+fi
+
+ynh_app_setting_set_default --key=admin --value="$admin"
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Upgrading source files..." --weight=1
+ynh_script_progression "Upgrading source files..."
 
-# Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
-
-chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression --message="Updating $app's configuration files..." --weight=1
+ynh_script_progression "Updating $app's configuration files..."
 
-ynh_add_config --template="user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
+ynh_config_add --template="user-config.inc.php-dist" --destination="$install_dir/user-config.inc.php"
 
 chmod -R 600 "$install_dir/user-config.inc.php"
 chown -R "$app:$app" "$install_dir/user-config.inc.php"
@@ -31,14 +39,14 @@ chown -R "$app:$app" "$install_dir/user-config.inc.php"
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
-ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
+ynh_script_progression "Upgrading system configurations related to $app..."
 
-ynh_add_fpm_config
+ynh_config_add_phpfpm
 
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Upgrade of $app completed" --last
+ynh_script_progression "Upgrade of $app completed"
