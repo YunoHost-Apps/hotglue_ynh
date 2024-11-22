@@ -23,9 +23,7 @@ code = "https://github.com/k0a1a/hotglue2"
 yunohost = ">= 11.2.28"
 architectures = "all"
 multi_instance = true
-
 ldap = true
-
 sso = false
 
 disk = "130M"
