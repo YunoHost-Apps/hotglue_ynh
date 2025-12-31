@@ -20,7 +20,7 @@ userdoc = "https://discourse.superglue.it/c/hotglue"
 code = "https://github.com/k0a1a/hotglue2"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
